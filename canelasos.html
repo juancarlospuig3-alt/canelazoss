@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChocoChangas 🍌🍫</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(to bottom, #fff7e6, #ffe0b2);
+      color:#4e342e;
+    }
+
+    header{
+      background: #5d4037;
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:1.2rem;
+    }
+
+    .hero{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center;
+      padding:40px 20px;
+      gap:30px;
+    }
+
+    .hero{<img src="canelasos.jpg"
+      width:350px;>
+      border-radius:20px;
+      box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .hero-text{
+      max-width:500px;
+    }
+
+    .hero-text h2{
+      font-size:2.5rem;
+      margin-bottom:15px;
+      color:#6d4c41;
+    }
+
+    .hero-text p{
+      font-size:1.1rem;
+      margin-bottom:20px;
+      line-height:1.6;
+    }
+
+    .precio{
+      font-size:2rem;
+      color:#d84315;
+      margin-bottom:20px;
+      font-weight:bold;
+    }
+
+    .btn-whatsapp{
+      display:inline-block;
+      background:#25D366;
+      color:white;
+      text-decoration:none;
+      padding:15px 25px;
+      border-radius:50px;
+      font-size:1.1rem;
+      transition:0.3s;
+    }
+
+    .btn-whatsapp:hover{
+      background:#1ebe5d;
+      transform:scale(1.05);
+    }
+
+    .sabores{
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    .sabores h2{
+      font-size:2.5rem;
+      margin-bottom:30px;
+    }
+
+    .cards{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      width:260px;
+      padding:20px;
+      border-radius:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      color:#bf360c;
+    }
+
+    .toppings{
+      background:#fff3e0;
+      padding:50px 20px;
+      text-align:center;
+    }
+
+    .toppings h2{
+      font-size:2.5rem;
+      margin-bottom:25px;
+    }
+
+    .top-list{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .top-item{
+      background:white;
+      padding:20px 30px;
+      border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      font-size:1.2rem;
+      font-weight:bold;
+    }
+
+    footer{
+      background:#5d4037;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.2rem;
+      }
+
+      .hero-text h2{
+        font-size:2rem;
+      }
+
+      .hero img{
+        width:100%;
+        max-width:320px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍌🍫 ChocoChangas</h1>
+    <p>Las mejores chimichangas de plátano con chocolate</p>
+  </header>
+
+  <section class="hero">
+    <img src="canelasos.jpg" alt="Chimichangas de plátano">
+
+    <div class="hero-text">
+      <h2>¡Crujientes por fuera, dulces por dentro!</h2>
+
+      <p>
+        Disfruta nuestras irresistibles chimichangas de plátano rellenas
+        de chocolate derretido y acompañadas de deliciosos toppings.
+      </p>
+
+      <div class="precio">$20 MXN</div>
+
+      <!-- CAMBIA EL NUMERO POR EL TUYO -->
+      <a 
+        class="btn-whatsapp"
+        href="https://wa.me/9214391910?text=Hola,%20quiero%20pedir%20chimichangas%20de%20plátano%20🍌🍫"
+        target="_blank"
+      >
+        Pedir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <section class="sabores">
+    <h2>Especialidades</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🍫 Chocolate Clásico</h3>
+        <p>Chocolate derretido con azúcar y canela.</p>
+      </div>
+
+      <div class="card">
+        <h3>🥜 Nutella Crunch</h3>
+        <p>Nutella cremosa con extra chocolate.</p>
+      </div>
+
+      <div class="card">
+        <h3>🍯 Dulce Cajeta</h3>
+        <p>Cajeta suave y deliciosa con plátano caliente.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="toppings">
+    <h2>✨ Elige tus toppings ✨</h2>
+
+    <div class="top-list">
+      <div class="top-item">🍯 Cajeta</div>
+      <div class="top-item">🍫 Nutella</div>
+      <div class="top-item">🥛 Lechera</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 ChocoChangas | Hecho con 🍌 y mucho 🍫</p>
+  </footer>
+<audio controls>
+  <source src="4.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
